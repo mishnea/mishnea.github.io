@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#logo").hover(function(){
+            $(this).css("color", "Gray");
+            },
+            function(){
+                $(this).css("color", "Black");
+            });
+        });
+    </script>
+
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <a id="logo" href="/index.html">Mihnea Clejan</a>
+        </h1>
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+        </nav>
+    </div>
+</body>
+</html>
