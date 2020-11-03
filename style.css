@@ -34,11 +34,13 @@ body {
 }
 
 .navbar {
+    white-space: nowrap;
     text-align: right;
+    min-width: fit-content;
 }
 
-nav > a {
-    margin: 0 10px;
+.navbar > a {
+    padding: 0 10px;
 }
 
 .logo {
@@ -47,6 +49,7 @@ nav > a {
 }
 
 #logo {
+    white-space: nowrap;
     font-style: normal;
 }
 
@@ -55,8 +58,10 @@ nav > a {
 }
 
 .content {
-    margin: 0 25%;
-    padding: 30px 0;
+    align-items: center;
+    padding: 30px;
+    margin: 10px auto;
+    max-width: 1000px;
 }
 
 .centered {
@@ -75,4 +80,19 @@ nav > a {
 .box {
     width: 50%;
     padding: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+    #header-spacer {
+        padding-top: 150px;
+    }
+    .logo, .navbar {
+        text-align: center;
+    }
+    .box {
+        width: 100%;
+    }
 }
