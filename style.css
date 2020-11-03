@@ -4,6 +4,10 @@
     border: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -21,8 +25,17 @@ body {
 }
 
 .header {
-    text-align: center;
-    background-color: #ffffff10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #303030f0;
+    z-index: 100;
+}
+
+.navbar {
+    text-align: right;
+    vertical-align: middle;
 }
 
 nav > a {
@@ -31,6 +44,7 @@ nav > a {
 
 .logo {
     letter-spacing: 3px;
+    text-align: left;
 }
 
 #logo {
