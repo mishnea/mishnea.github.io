@@ -59,3 +59,21 @@ nav > a {
     margin: 0 20%;
     padding: 30px 0;
 }
+
+.centered {
+    text-align: center;
+}
+
+.spaced {
+    padding-top: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    width: 50%;
+    padding: 5px;
+}
