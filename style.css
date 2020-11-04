@@ -46,11 +46,9 @@ body {
 .logo {
     letter-spacing: 3px;
     text-align: left;
-}
-
-#logo {
     white-space: nowrap;
     font-style: normal;
+    min-width: fit-content;
 }
 
 #header-spacer {
