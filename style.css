@@ -26,6 +26,11 @@ iframe {
     height: 100%;
 }
 
+ul {
+    display: table;
+    margin: 0 auto;
+}
+
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%;
@@ -47,7 +52,6 @@ body {
 }
 
 .navbar {
-    white-space: nowrap;
     text-align: right;
     min-width: fit-content;
 }
@@ -77,6 +81,11 @@ body {
 
 .centered {
     text-align: center;
+}
+
+.squeeze {
+    width: 80%;
+    margin: auto;
 }
 
 .spaced {
