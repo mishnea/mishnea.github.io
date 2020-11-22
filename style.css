@@ -1,3 +1,9 @@
+:root {
+    --main-bg-color: #101010;
+    --main-text-color: white;
+    --highlight-color: #303030f0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,8 +43,8 @@ ul {
 }
 
 body {
-    color: white;
-    background-color: #101010;
+    color: var(--main-text-color)   ;
+    background-color: var(--main-bg-color);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -47,7 +53,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #303030f0;
+    background-color: var(--highlight-color);
     z-index: 100;
 }
 
@@ -84,7 +90,7 @@ body {
 }
 
 .squeeze {
-    width: 80%;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -100,6 +106,13 @@ body {
 .box {
     width: 50%;
     padding: 5px;
+}
+
+.highlight {
+    padding: 10px;
+    outline-width: 10px;
+    outline-style: solid;
+    outline: var(--highlight-color);
 }
 
 @media screen and (max-width: 800px) {
