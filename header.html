@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Pages where header is used should link the stylesheet -->
-    <!-- <link href="/style.css" rel="stylesheet"> -->
-</head>
-<body>
-    <div class="header">
-        <div class="content container">
-            <a class="box logo" href="/">
-                <h1 id="logo" class="logo">MIHNEA CLEJAN</h1>
-            </a>
-            <nav class="box navbar">
-                <a href="/">Projects</a>
-                <a href="/about.html">About</a>
-                <a href="/interests.html">Interesting&nbsp;Stuff</a>
-                <a href="/contact.html">Contact</a>
-            </nav>
+    <head>
+        <!-- Pages where header is used should link the stylesheet -->
+        <!-- <link href="/style.css" rel="stylesheet"> -->
+        <script src="falldown.js"></script>
+        <style>
+            #noclick {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: red;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="content container">
+                <a class="box logo" href="/">
+                    <h1 id="logo" class="logo">MIHNEA CLEJAN</h1>
+                </a>
+                <nav class="box navbar">
+                    <a href="/">Projects</a>
+                    <a href="/about.html">About</a>
+                    <a href="/interests.html">Interesting&nbsp;Stuff</a>
+                    <a href="/contact.html">Contact</a>
+                </nav>
+            </div>
+            <a id="noclick" onclick="fallDown(0.2, 1, 10);">DO NOT CLICK</a>
         </div>
-    </div>
-</body>
+    </body>
 </html>
